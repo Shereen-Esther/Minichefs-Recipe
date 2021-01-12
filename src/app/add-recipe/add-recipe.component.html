@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="add recipe">
+        <h2 class="big-heading">Add your own recipe</h2> 
+        <form #addRecipeForm="ngForm" class="add-recipe-form" (ngSubmit)='addRecipe(addRecipeForm);'>
+            <input class="small-textbox" type="text" placeholder="Recipe Name" name="name" ngModel> <br> <br>
+            <input type="radio"  id="veg" name="type" value="veg" ngModel/><span class="radio" >Veg</span>
+          
+            <input type="radio"  id="non-veg" name="type" value="non-veg" ngModel/><span class="radio">Non-Veg</span>
+            <p>
+                 <select id = "myList" ngModel>
+                   <option value = "0">Categories</option>
+                   <option value = "north indian">North Indian</option>
+                   <option value = "south indian">South Indian</option>
+                   <option value = "chinese">Chinese</option>
+                   <option value = "snacks">Snacks</option>
+                   <option value = "beverages">Beverages</option>
+                   <option value = "deserts">Desserts</option>
+                 </select>
+            </p><br>
+            <input class="small-textbox" type="text" placeholder="Picture URL" name="picture" ngModel> 
+            <input class="small-textbox" type="text" placeholder="Video URL" name="video" ngModel>
+            <input class="large-textbox" type="text" placeholder="Description" name="description" ngModel> 
+            <input class="large-textbox" type="text" placeholder="Ingredients with comma" name="ingredients" ngModel>
+            <input class="large-textbox" type="text" placeholder="Steps with comma" name="steps" ngModel> 
+            <button class="button" style=" font-family:fira sans" ngModel>
+                <i class="fa fa-plus-circle " style="font-size:20px;color:white;"></i>
+                   Add my recipe
+            </button>
+        </form>
+    </div>
+</div>

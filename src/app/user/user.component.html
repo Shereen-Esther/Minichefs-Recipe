@@ -1,0 +1,56 @@
+<app-navbar ></app-navbar>
+<div class="container">
+    <div id="user">
+        <div class="user-card">
+            <h1 class="big-heading">{{whish}} {{user}},</h1>
+            <p class="mail"><i class="far fa-envelope icon-gap"></i> {{email}}</p>
+         </div>
+         <div id="my-recipes">
+            <h1 class="big-heading"><i class="far fa-file-alt icon-gap"></i>My Recipes</h1>
+            <ul class="recipe-list">
+
+
+                <div *ngIf="myRecipes==null; else elseR">
+                    <li class="recipe-item">
+                        <div class="box">
+                            <p>No Recipes added.</p>
+                        </div></li>
+                  </div>
+                  <ng-template #elseR>
+                    <div *ngFor='let myRecipe of myRecipes'>
+                        <li class="recipe-item">
+                            <div class="box">
+                                <div class="box-img">
+                                    <img src={{myRecipe.picture}} alt="">
+                                </div>
+                                <div class="box-text">
+                                    <h3>{{myRecipe.name}}<i class="far fa-stop-circle green"></i></h3>
+                                </div>
+                                <div class="box-btn">
+                                    <a routerLink="/food/{{myRecipe.item_id}}" >View</a>
+                                </div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </li>
+                    </div>
+                 </ng-template>
+              
+
+
+            
+                
+               
+            </ul>
+        </div>
+        <a href="/addrecipe" class="a-tag">
+            <div class="add-btn">
+                <i class="fas fa-plus-circle"></i> Add My Recipe
+            </div>
+        </a>
+
+    </div>
+    <br>
+   
+</div>
+<app-footer></app-footer>

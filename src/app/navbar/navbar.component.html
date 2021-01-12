@@ -1,0 +1,40 @@
+<div class="nav" [ngClass]="{'nav-color' : color ,'nav-colors' : !color }">
+  <div><img  id="logo"src="../../assets/img/logo.png" alt=""></div>
+  <input id="check-box" type="checkbox" />
+  <label for="check-box" id="menu-img">
+    <i class="fas fa-bars"></i>
+  </label>
+  <ul id="nav-items">
+    <li id="nav-item"><a routerLink="/">Home</a></li>
+    <li id="nav-item"><a routerLink="/">Categories</a></li>
+
+
+
+
+
+    <div *ngIf="user; else elseB">
+      <li id="nav-item"><a (click)="logout();" >Log out</a></li>
+    </div>
+    <ng-template #elseB>
+      <li id="nav-item">
+        <a routerLink="/login">Login</a>
+      </li></ng-template>
+
+
+
+
+    <div *ngIf="user; else elseBlock">
+      <li id="nav-item"><a routerLink="/user" class="btn"><i class="far fa-user mg-r"></i>{{user}}</a></li>
+    </div>
+    <ng-template #elseBlock>
+      <li id="nav-item">
+        <a routerLink="/sign-up" class="btn">Sign up</a>
+      </li></ng-template>
+
+
+    <input id="check-box" type="checkbox" />
+    <label for="check-box" id="close-menu">
+      <i class="far fa-times-circle"></i>
+    </label>
+  </ul>
+</div>

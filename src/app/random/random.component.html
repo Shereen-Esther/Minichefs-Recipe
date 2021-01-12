@@ -1,0 +1,26 @@
+<div class="container">
+    <div id="random">
+        <h1 class="big-heading">
+            Try Something Random Today.. 
+        </h1>
+        <div class="card-g random-card">
+            <div id="card-image">
+                <img src="{{recipe.picture}}" alt="{{recipe.name}}">
+            </div>
+            <div id="recipe-content">
+                <h3 id="recipe-name"> {{recipe.name}} <i class="far fa-stop-circle {{type}}"></i></h3>
+                <p class="description">
+                    {{recipe.description}}
+                </p>
+                <p class="description"><span class="inc">Ingredients :</span>{{recipe.ingredients}}</p>
+                <div class="btn-holder">
+                   
+                    <a href="food/{{recipe.item_id}}" class="btn ran-btn">Try Now</a>
+                    <button (click)="ngOnInit()" class="btn ran-btn rm-br">Next</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,178 @@
+#recipe-holder
+{
+  margin-top: 2rem;
+}
+
+
+
+@media screen and (max-width: 679px) {
+  #recipe {
+    min-height: 40vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1rem;
+    margin-bottom: 1rem;
+
+  }
+
+  #pic-holder {
+    align-self: center;
+    display: block;
+    margin: 0 auto;
+  }
+
+  #pic-holder img {
+    width: auto;
+    height: 20rem;
+    border-radius: 10%;
+    box-shadow: 10px 15px 24px -7px rgba(0, 0, 0, 0.25);
+  }
+
+  .btn-color {
+    background: var(--pale) !important;
+    color: var(--maroon);
+    position: relative;
+    bottom: 8px;
+    font-family: "fira sans";
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+  }
+
+  #steps
+  {
+    min-height: 70vh;
+  }
+  #steps > ul
+  {
+    padding-left: 0;
+  }
+  #steps > ul > li{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .point
+  {
+      display: inline-block ;
+      height: 1rem;
+      width: 1rem;
+      border-radius: 50%;
+      margin-right: 1rem;
+      background-color: var(--orange);
+  }
+
+}
+
+@media (min-width: 680px) and (max-width: 1200px) {
+    #recipe {
+        min-height: 30vh;
+        display: grid;
+        grid-template-columns: 40% 60%;
+      }
+    
+      #pic-holder {
+       margin-top: 2rem; 
+      }
+      
+      .recipe-btn-holder
+      {
+        margin-top:2rem;
+      }
+      #pic-holder img {
+        width: 20rem;
+        height: auto;
+        border-radius: 10%;
+        box-shadow: 10px 15px 24px -7px rgba(0, 0, 0, 0.25);
+      }
+    
+      .btn-color {
+        background: var(--pale) !important;
+        color: var(--maroon);
+        position: relative;
+        bottom: 8px;
+        font-family: "fira sans";
+        display: inline-block;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+      }
+      #steps
+  {
+    min-height: 70vh;
+  }
+  #steps > ul
+  {
+    padding-left: 0;
+  }
+  #steps > ul > li{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .point
+  {
+      display: inline-block ;
+      height: 1rem;
+      width: 1rem;
+      border-radius: 50%;
+      margin-right: 1rem;
+      background-color: var(--orange);
+  }
+    
+}
+
+@media screen and (min-width: 1200px) {
+  #recipe {
+    min-height: 30vh;
+    display: grid;
+    grid-template-columns: 35% 65%;
+  }
+
+  #pic-holder {
+   margin-top: 2rem; 
+  }
+  
+  .recipe-btn-holder
+  {
+    margin-top:2rem;
+  }
+  #pic-holder img {
+    width: 20rem;
+    height: auto;
+    border-radius: 10%;
+    box-shadow: 10px 15px 24px -7px rgba(0, 0, 0, 0.25);
+  }
+
+  .btn-color {
+    background: var(--pale) !important;
+    color: var(--maroon);
+    position: relative;
+    bottom: 8px;
+    font-family: "fira sans";
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+  }
+  #steps
+{
+min-height: 70vh;
+}
+#steps > ul
+{
+padding-left: 0;
+}
+#steps > ul > li{
+margin-top: 1rem;
+margin-bottom: 1rem;
+}
+.point
+{
+  display: inline-block ;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+  background-color: var(--orange);
+}
+}

@@ -1,0 +1,11 @@
+  <div class="login">
+    <h1  style="padding:170px 0px 0px 280px;color:white;margin-top:0; font-family:fira sans">Login</h1>
+    <div class="container">
+    <form #loginForm="ngForm" (ngSubmit)="doLogin(loginForm)">
+    <input type="text" class="text-box" placeholder="E-mail" name="email" required ngModel> <br>
+    <input type="password" class="text-box" placeholder="Password" name="password" required ngModel> <br>
+    <input  type="submit" class="button"  value="Login">
+    </form>
+    </div>
+ </div>
+

@@ -1,0 +1,127 @@
+/* fonts  */
+@font-face {
+   font-family: GothamBook;
+   src: url(./assets/fonts/GothamBook.otf);
+  }
+
+
+:root{
+   --black  : #060606;
+   --gray   : #57544D;
+   --brown  : #5D200D;
+   --orange : #BB4A20;
+   --maroon : #A02305;
+   --peach  : #D39765;
+   --pale   : #DBC6AB;
+   --eli    : #6C828F;
+   --white  : #ffffff;
+
+}
+html,body
+{
+   padding: 0;
+   margin: 0;
+   height: 100%;
+   width: 100%;
+}
+
+
+a{
+   text-decoration: none;
+   cursor: pointer;
+}
+ul
+{
+   list-style-type: none;
+   
+}
+p{
+   font-family: "GothamBook";
+   color: var(--gray);
+   line-height: 1.5rem;
+}
+.nav-color {
+   background-color: var(--gray);
+ }
+ .nav-colors{
+   background-color: transparent;
+ }
+ .mg-r
+ {
+  margin-right: 1.2rem;
+ }
+
+ .mg-l
+ {
+  margin-left: 1.2rem;
+ }
+ .rm-br
+ {
+    border: none;
+    padding: 10px 20px !important;
+    cursor: pointer;
+ }
+ .rm-br:focus{
+    outline: none;
+ }
+
+ .btn
+{
+  position: relative;
+  bottom: 8px;
+  font-family: "fira sans";
+  display: inline-block;
+  padding: 10px 20px;
+  color: var(--white) !important;
+  background: linear-gradient(256.97deg, #A02305 -45.18%, #A02305 12.34%, #BB4A20 97.98%);
+  border-radius: 5px;
+}
+
+
+.green
+{
+   color: green;
+}
+.red
+{
+   color:red;
+}
+.big-heading {
+   margin-top: 2rem;
+   font-family: 'fira sans';
+   font-weight: 600;
+   font-size: 2.5rem;
+   margin-bottom: 2rem;
+ }
+ .small-heading
+ {
+   font-family: 'fira sans';
+   font-weight: 800;
+   font-size: 1.5rem;
+   text-transform: uppercase;
+ }
+ .card-g
+{
+background-color: rgba(108, 130, 143, 0.26);
+border-radius: 10px;
+padding: 3%;
+}
+@media screen and (max-width: 679px) {
+   .container {
+      padding: 0 1rem 0 1rem;
+   }
+   
+ }
+ 
+ @media  (min-width: 680px) and (max-width: 1200px){
+   .container {
+      padding: 0 8rem 0 8rem;
+   }
+ }
+
+ @media screen and (min-width: 1200px)
+ {
+   .container {
+      padding: 0 10rem 0 10rem;
+   }
+ }

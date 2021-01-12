@@ -1,0 +1,12 @@
+<div class="signup">
+    <div class="container">
+    <h1  style="padding:170px 0px 0px 0;color:white;margin-top:0; font-family:fira sans">Sign up</h1>
+    <form  #signupForm="ngForm" class="signup-form" (ngSubmit)="signup(signupForm);">
+    <input type="text" class="text-box" placeholder="Name" name="name" required ngModel> <br>
+    <input type="text" class="text-box" placeholder="E-mail" name="email" required ngModel> <br>
+    <input type="password" class="text-box" placeholder="Password" name="password" required   ngModel> <br>
+    <input  type="submit" class="button"  value="Sign up">
+    </form>
+    </div>
+ </div>
+

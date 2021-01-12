@@ -1,0 +1,279 @@
+#user {
+  margin-top: 10vh;
+  min-height: 80vh;
+  width: auto;
+  margin-bottom: 10vh ;
+}
+
+@media screen and (max-width: 679px) {
+
+  .user-card {
+    background: #DBC6AB;
+    border-radius: 20px;
+    padding: 3rem;
+  }
+
+  .mail {
+    margin-top: 0px;
+    font-weight: 900 !important;
+  }
+
+  .icon-gap {
+    margin-right: .8rem;
+  }
+
+  #my-recipes {
+    margin-top: 10vh;
+  }
+
+  .recipe-item {
+    padding: 1%;
+    background: rgba(108, 130, 143, 0.2);
+    border-radius: 10px;
+    margin-bottom: 2rem;
+  }
+
+  .recipe-list {
+    padding-left: 0;
+  }
+
+  .box {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    place-content: center;
+  }
+
+  .box-img>img {
+    width: 5rem;
+    height: 5rem;
+    box-shadow: 10px 15px 24px -7px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+  }
+
+  .box-text>h3 {
+    font-family: 'fira sans';
+    font-size: 2rem;
+  }
+
+  .box-btn,
+  .box-img,
+  .box-btn {
+    align-self: center;
+  }
+
+  .box-btn>a {
+    font-family: "fira sans";
+    display: inline-block;
+    padding: 10px 20px;
+    color: var(--white) !important;
+    background: linear-gradient(256.97deg, #A02305 -45.18%, #A02305 12.34%, #BB4A20 97.98%);
+    border-radius: 5px;
+
+  }
+
+  .add-btn {
+    margin-top: 2rem;
+    display: block;
+    text-align: center;
+    padding: 1rem 3rem;
+    font-family: "fira sans";
+    font-weight: 600;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    background-color: var(--eli);
+  }
+
+  .a-tag {
+    color: var(--white);
+  }
+
+  .add-btn i {
+    margin-right: 10px;
+  }
+
+
+}
+
+@media (min-width: 680px) and (max-width: 1200px) {
+
+
+  .user-card {
+    background: #DBC6AB;
+    border-radius: 20px;
+    padding: 3rem;
+  }
+
+  .mail {
+    margin-top: 0px;
+    font-weight: 900 !important;
+  }
+
+  .icon-gap {
+    margin-right: .8rem;
+  }
+
+  #my-recipes {
+    margin-top: 10vh;
+  }
+
+  .recipe-list {
+    padding-left: 0;
+  }
+
+  .recipe-item {
+    padding: 1%;
+    background: rgba(108, 130, 143, 0.2);
+    border-radius: 10px;
+    margin-bottom: 2rem;
+  }
+
+  .box {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    place-content: center;
+  }
+
+  .box-btn,
+  .box-img,
+  .box-btn {
+    align-self: center;
+  }
+
+  .box-img>img {
+    width: 6rem;
+    height: 6rem;
+    box-shadow: 10px 15px 24px -7px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+  }
+
+  .box-text>h3 {
+    font-family: 'fira sans';
+    font-size: 2rem;
+  }
+
+  .box-btn>a {
+    font-family: "fira sans";
+    display: inline-block;
+    padding: 10px 20px;
+    color: var(--white) !important;
+    background: linear-gradient(256.97deg, #A02305 -45.18%, #A02305 12.34%, #BB4A20 97.98%);
+    border-radius: 5px;
+
+  }
+
+
+  .add-btn {
+    margin-top: 2rem;
+    display: block;
+    text-align: center;
+    padding: 1rem 3rem;
+    font-family: "fira sans";
+    font-weight: 600;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    background-color: var(--eli);
+  }
+
+  .a-tag {
+    color: var(--white);
+  }
+
+  .add-btn i {
+    margin-right: 10px;
+  }
+
+
+
+
+}
+
+@media screen and (min-width: 1200px) {
+  .user-card {
+    background: #DBC6AB;
+    border-radius: 20px;
+    padding: 3rem;
+  }
+
+  .mail {
+    margin-top: 0px;
+    font-weight: 900 !important;
+  }
+
+  .icon-gap {
+    margin-right: .8rem;
+  }
+
+  #my-recipes {
+    margin-top: 10vh;
+  }
+
+  .recipe-item {
+    padding: 1%;
+    background: rgba(108, 130, 143, 0.2);
+    border-radius: 10px;
+    margin-bottom: 2rem;
+  }
+
+  .recipe-list {
+    padding-left: 0;
+  }
+
+  .box {
+    display: grid;
+    grid-template-columns: 20% 70% 10%;
+    place-content: center;
+  }
+
+  .box-btn,
+  .box-img,
+  .box-btn {
+    align-self: center;
+  }
+
+  .box-img>img {
+    width: 6rem;
+    height: 6rem;
+    box-shadow: 10px 15px 24px -7px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-left: 1rem;
+  }
+
+  .box-text>h3 {
+    font-family: 'fira sans';
+    font-size: 2rem;
+  }
+
+  .box-btn>a {
+    font-family: "fira sans";
+    display: inline-block;
+    padding: 10px 20px;
+    color: var(--white) !important;
+    background: linear-gradient(256.97deg, #A02305 -45.18%, #A02305 12.34%, #BB4A20 97.98%);
+    border-radius: 5px;
+
+  }
+
+  .add-btn {
+    margin-top: 2rem;
+    display: block;
+    text-align: center;
+    padding: 1rem 3rem;
+    font-family: "fira sans";
+    font-weight: 600;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    background-color: var(--eli);
+
+  
+  }
+
+  .a-tag {
+    color: var(--white);
+    
+  }
+
+  .add-btn i {
+    margin-right: 10px;
+  }
+
+}

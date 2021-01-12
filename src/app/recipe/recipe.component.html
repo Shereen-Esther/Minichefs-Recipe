@@ -1,0 +1,39 @@
+<app-navbar></app-navbar>
+<div class="container">
+  <div id="recipe-holder">
+    <div id="recipe">
+        <div id="pic-holder">
+          <img
+            src={{recipe.picture}}
+            alt="">
+        </div>
+        <div id="recipe-details">  
+          <h1 class="big-heading">{{recipe.name}}<i class="far fa-stop-circle mg-l {{type}}"></i></h1>
+          <h3 class="small-heading">Description</h3>
+          <p>{{recipe.description}}</p>
+        </div>
+      </div>
+      <div id="recipe">
+        <div class="recipe-btn-holder">
+          <a href={{recipe.video}} class="btn mg-r"><i class="far fa-play-circle"></i> Watch Video</a>
+          <button  class=" btn-color"><i class="fas fa-share-alt"></i></button>
+        </div>
+      <div class="ingredients">
+          <h3 class="small-heading">Ingredients</h3>
+          <p>{{recipe.ingredients}}
+        </p>
+      </div>
+    </div>
+    <div id="steps">
+        <h3 class="small-heading">Steps</h3>
+        <ul>
+          <div *ngFor='let i of recipe.steps'>
+            <li><p><span class="point"></span>{{i}}</p></li>
+          </div>
+        </ul>
+    </div>
+  </div>  
+ 
+</div>
+
+<app-footer></app-footer>

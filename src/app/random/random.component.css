@@ -1,0 +1,151 @@
+#random {
+  min-height: 70vh;
+}
+
+
+@media screen and (max-width: 679px) {
+
+  .random-card
+  {
+     
+      display: grid;
+      grid-template-rows: 1fr 1fr ;
+      grid-gap: 1.5rem;
+      place-content: center;
+  }
+  #card-image{
+      display: block;
+      align-self: center;
+      margin: 0 auto;
+      
+  }
+  
+  #card-image img{
+      width: auto;
+      height: 15rem;
+      border-radius: 10%;  
+      box-shadow: 10px 15px 24px -7px rgba(0, 0, 0, 0.25);
+  }
+  #recipe-name{
+    font-family: 'fira sans';
+    font-weight: 600;
+    font-size: 2rem;
+  }
+  .description{
+      line-height: 1.8rem;
+  }
+  .inc{
+      font-weight: 600;
+      font-family: "fira sans";
+      text-transform: uppercase;
+      margin-right: .5rem;
+      color: var(--black);
+  }
+  .btn-holder
+      {
+        margin-top:2rem;
+      }
+  .ran-btn
+  {
+    margin-right:1rem;
+  }
+
+ 
+
+}
+
+@media (min-width: 680px) and (max-width: 1200px) {
+
+   
+      .random-card
+      {
+         
+          display: grid;
+          grid-template-columns: 1fr 1fr ;
+          grid-gap: 1.5rem;
+          place-content: center;
+      }
+      #card-image{
+          display: block;
+          align-self: center;
+          margin: 0 auto;
+          
+      }
+      
+      #card-image img{
+          width: auto;
+          height: 15rem;
+          border-radius: 10%;  
+          box-shadow: 10px 15px 24px -7px rgba(0, 0, 0, 0.25);
+      }
+      #recipe-name{
+        font-family: 'fira sans';
+        font-weight: 600;
+        font-size: 2rem;
+      }
+      .description{
+          line-height: 1.8rem;
+      }
+      .inc{
+          font-weight: 600;
+          font-family: "fira sans";
+          text-transform: uppercase;
+          margin-right: .5rem;
+          color: var(--black);
+      }
+      .ran-btn
+      {
+        margin-right:1rem;
+      }
+    
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    
+      .random-card
+      {
+          display: grid;
+          grid-template-columns: 1fr 1fr ;
+          grid-gap: 1.5rem;
+          place-content: center;
+      }
+      #card-image{
+          display: block;
+          align-self: center;
+          margin: 0 auto;
+      }
+      
+      #card-image img{
+          width: auto;
+          height: 15rem;
+          border-radius: 10%;  
+          box-shadow: 10px 15px 24px -7px rgba(0, 0, 0, 0.25);
+      }
+      #recipe-name{
+        font-family: 'fira sans';
+        font-weight: 600;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+      .description{
+          line-height: 1.8rem;
+      }
+      .inc{
+          font-weight: 600;
+          font-family: "fira sans";
+          text-transform: uppercase;
+          margin-right: .5rem;
+          color: var(--black);
+      }
+      .btn-holder
+      {
+        margin-top:2rem;
+      }
+      .ran-btn
+      {
+        margin-right:2rem;
+      }
+    
+}

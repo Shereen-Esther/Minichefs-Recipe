@@ -1,0 +1,13 @@
+#footer
+{
+    display: block;
+    text-align: center;
+    background-color : var(--gray);
+     padding: .5%;
+
+}
+#footer > h6{
+    font-family: 'fira sans';
+    color : var(--white);
+    font-size: 1rem;
+}

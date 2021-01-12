@@ -1,0 +1,47 @@
+.large-textbox{
+    border-radius: 10px;
+    padding: 10px;
+    padding-right:45rem;
+    padding-bottom:7rem;
+    margin-bottom: 1rem;
+}
+.small-textbox{
+    border-radius: 10px;
+    padding: 10px;
+    padding-right:45rem;
+    margin-bottom: 1rem;
+}
+.large-textbox:focus,.small-textbox:focus
+{
+    outline: none;
+}
+.add-recipe-form {
+    margin:0px 0px 0px 180px;
+}
+.button{
+    text-align: center;
+    border-radius: 10px;
+    background-color: var(--eli); 
+    color: white; 
+    padding-right:26rem; 
+    padding-bottom:1rem;
+    text-indent:11rem;
+    padding-top: 1rem;
+}
+h2{
+    margin:80px 0px 3rem 180px;
+    font-family: 'fira sans';
+}
+
+#myList{
+    border-radius: 10px;
+    padding-right:48rem; 
+    padding-top:1rem;
+    padding-bottom:1rem;
+    padding-left:1rem;
+}
+
+.radio
+{
+    font-family: 'fira sans';
+}

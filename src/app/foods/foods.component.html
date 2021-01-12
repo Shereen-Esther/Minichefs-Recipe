@@ -1,0 +1,37 @@
+<app-navbar></app-navbar>
+<div class="container">
+  <div id="food">
+    <h1 class="big-heading">{{name}}</h1>
+  <owl-carousel-o [options]="customOptions">
+
+     {{foods}}
+    <ng-container *ngFor="let food of foods">
+      <ng-template carouselSlide>
+        <div class="food-card">
+          <div id="card-image">
+            <img
+              src="{{food.picture}}"
+              alt=""
+            />
+          </div>
+          <div id="recipe-content">
+            <h3 id="recipe-name">
+              {{food.name}}<i class="far fa-stop-circle green"></i>
+            </h3>
+            <p class="description">
+              {{food.description}}
+            </p>
+
+            <div class="btn-holder">
+              <a href="food/{{food.item_id}}" class="btn ran-btn">View</a>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </ng-container>
+    
+   
+
+    </owl-carousel-o>
+  </div>
+</div>
